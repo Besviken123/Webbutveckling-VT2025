@@ -195,6 +195,29 @@ header {
 
 }
 
+.nav-text-container a:hover {
+    background: #ffffff;
+    /* Background color change */
+}
+
+/* Text color change when hovering */
+.nav-text-container :hover {
+    color: #4C587E
+}
+
+/* Ensure the text stays blue when hovering over the nav text container */
+.nav-text-container:hover>a {
+    color: #4C587E;
+    /* Keep it blue */
+}
+
+/* Also keep the text blue when hovering over the dropdown menu */
+.nav-text-container:hover .dropdown,
+.nav-text-container:hover .dropdown a {
+    color: #333;
+    /* Keep it blue */
+}
+
 .nav-container ul {
     display: flex;
     gap: 20px;
@@ -231,7 +254,6 @@ header {
     top: 90%;
     left: 0;
     min-width: 12vw;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     padding: 10px 0;
     border-radius: 5px;
     z-index: 1000;
