@@ -25,6 +25,8 @@ body {
 /* Grid-container */
 .container {
     display: grid;
+
+    /* Definierar grid-områden för olika sektioner på sidan */
     grid-template-areas:
         "header header"
         "nav nav"
@@ -34,10 +36,14 @@ body {
         "main aside"
         "footer footer";
     grid-template-columns: 1fr;
+    /* En kolumn-layout, */
     gap: 20px;
     max-width: 1200px;
+    /* Begränsa bredden på sidan */
     margin: auto;
+    /* Centrera layout horisontellt */
     padding: 20px;
+    /* inre marginal för att ge luft runt element */
     text-align: center;
 }
 
@@ -57,7 +63,6 @@ header {
     max-width: 95%;
     margin: 0 auto;
     padding: 10px;
-    /* Prevents elements from wrapping into a column */
 }
 
 .left-header {
@@ -87,7 +92,9 @@ header {
 
 .goblin {
     max-width: 100%;
+    /* Säkerställer att containern aldrig överskrider sin förälder */
     height: auto;
+    /* Anpassa höjden proportionellt baserat på innehållet */
 }
 
 .goblin img {
@@ -95,10 +102,14 @@ header {
     z-index: 1;
     top: 17px;
     width: 12vw;
+    /* Gör att bildens bredd motsvarar 12% av viewportens bredd */
     max-width: 150px;
+    /* Begränsar bildens bredd till max 150 pixlar */
     height: auto;
+    /* Bevara bildens proportioner när bredden ändras */
     display: block;
     flex-shrink: 1;
+    /* Tillåter att bilden krymper vid behov inom flexbox-container */
 }
 
 .search {
@@ -332,12 +343,6 @@ header {
 }
 
 /* ------- END OF HEADER ------- */
-
-/* ------- CARDGAME -------- */
-
-
-
-/* ---- END OF CARDGAME ---- */
 
 /* HOME PAGE (INDEX) */
 .newsGraphic {
@@ -946,9 +951,13 @@ header {
 
 .about-content {
     display: flex;
+    /* Använder flexbox för att hantera layouten av innehållet */
     flex-wrap: wrap;
+    /* Tillåter att innehållet radbryts om det inte får plats på en rad */
     align-items: center;
+    /* Centrerar innehållet vertikalt inom flex-container */
     justify-content: center;
+    /* Centrerar innehållet horisontellt */
     max-width: auto;
     gap: 2vw;
     background: rgba(255, 255, 255, 0.85);
@@ -1005,11 +1014,14 @@ header {
 
 .contact-subtext {
     display: flex;
+    /* Använder flexbox för att hantera layouten */
     flex-direction: column;
+    /* Lägger elementen i en vertikal stapel */
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
+    /* Elementet tar upp hela tillgängliga bredden */
     margin: 20px 0;
 }
 
