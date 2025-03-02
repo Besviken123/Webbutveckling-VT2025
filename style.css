@@ -73,6 +73,7 @@ header {
     max-width: 100%;
 }
 
+/* logo container */
 .logo {
     display: flex;
     margin-top: auto;
@@ -90,6 +91,7 @@ header {
     flex-shrink: 1;
 }
 
+/* goblin container */
 .goblin {
     max-width: 100%;
     /* Säkerställer att containern aldrig överskrider sin förälder */
