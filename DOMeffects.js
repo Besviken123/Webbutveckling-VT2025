@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/* VG - Dragable support guy with a parking zone 
+/* VG - Dragable support guy with a parking zone */
 $(document).ready(function () {
     // Makes Support dragable
     $("#support-maskot").draggable({
@@ -52,4 +52,3 @@ $(document).ready(function () {
         }
     });
 });
-*/
