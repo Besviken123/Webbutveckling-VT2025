@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="sv">
-<!--TEST KOMMENTAR FÖR COMMIT-->
 
 <head>
     <meta charset="UTF-8">
@@ -182,40 +181,108 @@
 
     <!-- Huvudinnehåll -->
     <main>
-        <div class="contact-subtext">
-            <h1>VI FINNS HÄR OM DU VILL KONTAKTA OSS!</h1>
-            <p>Fyll i formuläret nedan för att komma i kontakt med oss.</p>
-            <p>Vi kommer svara så fort vi kan.</p>
-        </div>
+        <div class="forum-container">
+            <div class="forum-title-and-graphic">
+                <div class="forum-title">
+                    <h1>FORUM</h1>
+                </div>
+                <div class="forum-graphic">
+                    <img src="Bilder/forum.png" alt="forum image">
+                </div>
+            </div>
 
-        <!-- Kontaktformulär med en tabell -->
-        <form action="mailto:CollectorsPoint@interitkigtmail.com" method="post" enctype="text/plain">
-            <table class="contact-table">
-                <tr>
-                    <td><label for="name">Namn:</label></td>
-                    <td><input type="text" id="name" name="name" required></td>
-                </tr>
-                <tr>
-                    <td><label for="email">E-post:</label></td>
-                    <td><input type="email" id="email" name="email" required></td>
-                </tr>
-                <tr>
-                    <td><label for="subject">Ämne:</label></td>
-                    <td><input type="text" id="subject" name="subject"></td>
-                </tr>
-                <tr>
-                    <td><label for="message">Meddelande:</label></td>
-                    <td><textarea id="message" name="message" rows="5" required></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align: center;">
-                        <button type="submit">Skicka</button>
-                        <button type="reset">Rensa</button>
-                    </td>
-                </tr>
-            </table>
-        </form>
+            <div class="forum-navbar">
+                <ul>
+                    <li><a href="underConstruction.html">ALLA</a></li>
+                    <li><a href="underConstruction.html">MAGIC</a></li>
+                    <li><a href="underConstruction.html">Pokémon</a></li>
+                    <li><a href="underConstruction.html">WARHAMMER</a></li>
+                    <li><a href="underConstruction.html">DND</a></li>
+                    <li><a href="underConstruction.html">TRÄFFAR</a></li>
+                    <li><a href="underConstruction.html">SÖKER KORT</a></li>
+                    <li><a href="underConstruction.html">BLANDAT</a></li>
+                </ul>
+            </div>
+
+            <div class="forum-sidebar-search-posts">
+                <!-- Sidebar with Recent Posts -->
+                <div class="forum-sidebar">
+                    <h2>Senast besökta inlägg</h2>
+                    <ul>
+                        <li><a href="underConstruction.html"> Guide till Magic The Gathering-lekar</a></li>
+                        <li><a href="underConstruction.html"> Värdering av Pokémonkort</a></li>
+                        <li><a href="underConstruction.html"> Strategitips för Yu-Gi-Oh!</a></li>
+                        <li><a href="underConstruction.html"> Rekommendationer för brädspel</a></li>
+                        <li><a href="underConstruction.html"> Exempel inlägg senast besökt</a></li>
+                        <li><a href="underConstruction.html"> Exempel inlägg senast besökt</a></li>
+                        <li><a href="underConstruction.html"> Exempel inlägg senast besökt</a></li>
+                        <li><a href="underConstruction.html"> Exempel inlägg senast besökt</a></li>
+                        <li><a href="underConstruction.html"> Exempel inlägg senast besökt</a></li>
+                        <li><a href="underConstruction.html"> Exempel inlägg senast besökt</a></li>
+                        <li><a href="underConstruction.html"> Exempel inlägg senast besökt</a></li>
+                    </ul>
+                </div>
+
+                <!-- Posts Section for Example User Posts -->
+                <div class="forum-posts">
+                    <h2>Bläddrar från ALLA inlägg</h2>
+                    <div class="post">
+                        <h3>Bästa MTG-lekarna 2024</h3>
+                        <p>Publicerad av <strong>User123</strong> | för 2 timmar sedan</p>
+                        <p>Letar du efter de bästa lekarna i den nuvarande metan? Här är mina tankar...</p>
+                    </div>
+                    <div class="post">
+                        <h3>Hur man identifierar sällsynta Pokémon-kort</h3>
+                        <p>Publicerad av <strong>PokeMaster</strong> | för 5 timmar sedan</p>
+                        <p>Ny inom Pokémon-kort? Här är en guide om vad som gör ett kort värdefullt...</p>
+                    </div>
+                    <div class="post">
+                        <h3>Exempel inlägg</h3>
+                        <p>Publicerad av <strong>Användare</strong> | för x timmar sedan</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    <div class="post">
+                        <h3>Exempel inlägg</h3>
+                        <p>Publicerad av <strong>Användare</strong> | för x timmar sedan</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    <div class="post">
+                        <h3>Exempel inlägg</h3>
+                        <p>Publicerad av <strong>Användare</strong> | för x timmar sedan</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    <div class="post">
+                        <h3>Exempel inlägg</h3>
+                        <p>Publicerad av <strong>Användare</strong> | för x timmar sedan</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    <div class="post">
+                        <h3>Exempel inlägg</h3>
+                        <p>Publicerad av <strong>Användare</strong> | för x timmar sedan</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    <div class="post">
+                        <h3>Exempel inlägg</h3>
+                        <p>Publicerad av <strong>Användare</strong> | för x timmar sedan</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
     <!-- Sidfot -->
     <footer>
         <p>&copy; 2025 Collector's Point | <a href="about.html">Kontakt</a></p>
