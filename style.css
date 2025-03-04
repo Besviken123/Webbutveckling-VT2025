@@ -434,6 +434,39 @@ header {
 
 .changeNewsButton :hover {}
 
+/* Syle for dragable support guy */
+#support-maskot {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 300px;
+    height: 300px;
+    cursor: grab;
+    z-index: 1000;
+}
+
+#support-maskot img {
+    width: 100%;
+    height: auto;
+}
+
+/* Dropzone style */
+#support-dropzone {
+    position: relative;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    background-color: #4C587E;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
 /* Styling for article slider */
 .newArticleSlider {
     display: flex;

@@ -1,5 +1,5 @@
-let currentIndex = 0; // Håller koll på vilken nyhet som visas
-// Array med nyheter (bilder + texter)
+let currentIndex = 0; // Keep track of which news is displayed
+// Array with news(pictures + text)
 const newsData = [
     {
         img: "Bilder/newsGraphic.jpg",
@@ -31,7 +31,7 @@ const newsData = [
 ];
 
 $(document).ready(function () {
-    // Starta en timer som byter nyhet var x sekund
+    // Start a timer that changes news every x seconds
     setInterval(changeNews, 8000);
     $('.changeNewsButton').click(changeNews);
 });

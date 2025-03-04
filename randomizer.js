@@ -1,24 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Hämta alla artikel-element
+    // Get all article elements
     let items = document.querySelectorAll(".random-item");
 
-    // Kontrollera att det finns några artiklar
+    // Check that there are any items
     if (items.length === 0) {
         console.warn("Inga artiklar hittades i .random-item");
         return;
     }
 
-    // Slumpa ett index
+    // Randomize an index
     let randomIndex = Math.floor(Math.random() * items.length);
 
     console.log("Visar slumpmässig artikel: ", randomIndex); // Debugging
 
-    // Dölj alla artiklar
+    // Hide all articles
     items.forEach(item => {
         item.style.display = "none";
     });
 
-    let numToShow = 4; // Hur många artiklar ska visas?
+    let numToShow = 4; // number of items to show (maximum 8 items)
     let shuffledItems = Array.from(items).sort(() => 0.5 - Math.random());
     shuffledItems.slice(0, numToShow).forEach(item => item.style.display = "block");
 });
