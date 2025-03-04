@@ -1,5 +1,3 @@
-
-// Search border activate on focus
 document.addEventListener("DOMContentLoaded", function () {
     let searchBox = document.querySelector(".search input");
 
