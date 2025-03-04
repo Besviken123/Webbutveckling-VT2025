@@ -1,10 +1,10 @@
 $(document).ready(function () {
-    // Hide all submenus initially
+    // Hide all submenus
     $(".submenu").hide();
 
-    // Click event on main category
+    // Click event
     $(".forum-navbar ul li a").click(function (event) {
-        event.preventDefault(); // Prevent default link behavior
+        event.preventDefault(); // Prevent default link
 
         // Slide up other submenus except the one clicked
         $(".submenu").not($(this).next(".submenu")).slideUp();
