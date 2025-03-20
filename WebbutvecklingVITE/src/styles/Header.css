@@ -1,0 +1,317 @@
+/* ------- HEADER ------- */
+
+header {
+    grid-area: header;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    flex-flow: nowrap;
+    gap: 20px;
+    max-width: 100%;
+}
+
+/* logo container */
+.logo {
+    display: flex;
+    margin-top: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo img {
+    position: relative;
+    top: 5px;
+    width: 20vw;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    flex-shrink: 1;
+}
+
+/* goblin container */
+.goblin {
+    max-width: 100%;
+    /* Säkerställer att containern aldrig överskrider sin förälder */
+    height: auto;
+    /* Anpassa höjden proportionellt baserat på innehållet */
+}
+
+.goblin img {
+    position: relative;
+    z-index: 1;
+    top: 17px;
+    width: 12vw;
+    /* Gör att bildens bredd motsvarar 12% av viewportens bredd */
+    max-width: 150px;
+    /* Begränsar bildens bredd till max 150 pixlar */
+    height: auto;
+    /* Bevara bildens proportioner när bredden ändras */
+    display: block;
+    flex-shrink: 1;
+    /* Tillåter att bilden krymper vid behov inom flexbox-container */
+}
+
+.search {
+    display: flex;
+    flex-shrink: 1;
+    margin-top: auto;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: auto;
+    height: 40px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    /* Slight shadow for visibility */
+}
+
+.search input {
+    border: none;
+    padding: 6px 10px;
+    width: 40vw;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+}
+
+.search button {
+    background: none;
+    /* Remove default button background */
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+}
+
+.search button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Add hover effect for visibility */
+.search:hover {
+    border-color: #4C587E;
+}
+
+/* Style for button container */
+.icon-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: auto;
+    gap: 15px;
+}
+
+/* Style for the buttons */
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Style for the images */
+.icon-btn img {
+    width: 2vw;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.icon-btn:hover img {
+    transform: scale(1.1);
+    /* Slight zoom on hover */
+}
+
+.nav-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4C587E;
+    padding: 1px 10px;
+    flex-shrink: 1;
+}
+
+.nav-text-container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+
+}
+
+.nav-text-container a:hover {
+    background: #ffffff;
+    /* Background color change */
+}
+
+/* Text color change when hovering */
+.nav-text-container :hover {
+    color: #4C587E
+}
+
+/* Ensure the text stays blue when hovering over the nav text container */
+.nav-text-container:hover>a {
+    color: #4C587E;
+    /* Keep it blue */
+}
+
+/* Also keep the text blue when hovering over the dropdown menu */
+.nav-text-container:hover .dropdown,
+.nav-text-container:hover .dropdown a {
+    color: #333;
+    /* Keep it blue */
+}
+
+.nav-container ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    flex-shrink: 1;
+
+}
+
+.nav-container ul li {
+    position: relative;
+    flex-shrink: 1;
+    display: flex;
+}
+
+/* Style navigation links */
+.nav-container ul li a {
+    display: flex;
+    flex-shrink: 1;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-family: 'Anton SC', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    display: block;
+}
+
+/* Dropdown menu - initially hidden */
+.nav-container ul li .dropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    list-style: none;
+    top: 90%;
+    left: 0;
+    min-width: 12vw;
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 1000;
+
+}
+
+/* Dropdown menu links */
+.nav-container ul li .dropdown li {
+    padding: 10px 20px;
+}
+
+.nav-container ul li .dropdown li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: background 0.2s ease-in-out;
+}
+
+/* Hover effect for dropdown items */
+.nav-container ul li .dropdown li a:hover {
+    background: #4C587E;
+    color: white;
+}
+
+/* Show dropdown menu on hover */
+.nav-container ul li:hover .dropdown {
+    display: block;
+}
+
+.nav-container ul li:hover {
+    background: #ffffff;
+    /* Background color change */
+}
+
+/* Text color change when hovering */
+.nav-container ul li:hover>a {
+    color: #4C587E
+}
+
+/* Style for arrow image */
+.dropdown-arrow {
+    width: 20px;
+    /* Adjust arrow size */
+    height: auto;
+    margin-left: 5px;
+    /* Space between text and arrow */
+    transition: transform 0.2s ease-in-out;
+    /* Smooth effect */
+}
+
+/* Rotate arrow on hover */
+.nav-container ul li:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+/* Style the hamburger menu icon */
+.hamburger-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    background: #4C587E;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.middleheaderburger {
+    display: flex;
+    margin-top: auto;
+}
+
+.darkmode-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.darkmode-container button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+.darkmode-container button:hover {
+    transform: scale(1.1);
+}
+
+/* ------- END OF HEADER ------- */

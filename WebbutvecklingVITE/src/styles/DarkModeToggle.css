@@ -1,0 +1,12 @@
+.dark-mode-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 2vw;
+    height: 2vw;
+}
+
+.dark-mode-btn img {
+    width: 2.1vw;
+    height: auto;
+}
